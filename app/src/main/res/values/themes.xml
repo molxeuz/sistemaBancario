@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SistemaBancario" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#8F8F8F</item>
+        <item name="colorPrimaryVariant">#8F8F8F</item>
+        <item name="colorOnPrimary">#8F8F8F</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

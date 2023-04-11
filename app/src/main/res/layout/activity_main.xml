@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#222121" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#333232">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:text=" Bancolombia A la mano "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="-220dp"
+            android:text=" Hola, user "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvtotalsaldo"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginTop="145dp"
+            android:textColor="#FFFFFF"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawableEnd="@drawable/ic_baseline_more_vert_24"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="145dp"
+            android:layout_marginLeft="60dp"
+            android:text="Ver detalle "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#3C3B3B"
+            android:layout_marginLeft="-385dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="CLIENTE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="35dp" />
+
+            <ImageButton
+                android:id="@+id/ibregresarcliente"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#3C3B3B"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_baseline_logout_24"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text=" IDENTIFICACION: "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etidentificacioncliente"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="-35dp"
+            android:textColor="#FFFFFF"
+            android:inputType="number"
+            android:textSize="15dp"
+            android:textColorHint="#FFFBFB"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:text=" NOMBRE: "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etnombrecompleto"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="-35dp"
+            android:textColor="#FFFFFF"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:textColorHint="#FFFBFB"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:text=" CORREO: "
+            android:textColor="#F8F8F8"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etcorreoelectronico"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="-35dp"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp"
+            android:textColorHint="#FFFBFB"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=" CONTRASEÑA: "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etcontraseña"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="-35dp"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:textSize="15dp"
+            android:textColorHint="#FFFBFB"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="#333232"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/ibguardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="GUARDAR"
+            android:textAllCaps="false"
+            android:background="#3C3B3B"
+            android:src="@drawable/ic_baseline_save_alt_24"/>
+
+        <ImageButton
+            android:id="@+id/ibbuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="BUSCAR"
+            android:textAllCaps="false"
+            android:background="#3C3B3B"
+            android:src="@drawable/ic_baseline_manage_search_24"/>
+
+        <ImageButton
+            android:id="@+id/ibeditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="EDITAR"
+            android:textAllCaps="false"
+            android:background="#3C3B3B"
+            android:src="@drawable/ic_baseline_edit_note_24"/>
+
+        <ImageButton
+            android:id="@+id/ibborrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="BORRAR"
+            android:textAllCaps="false"
+            android:background="#3C3B3B"
+            android:src="@drawable/ic_baseline_delete_sweep_24"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="65dp"
+        android:background="#616161">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/ibtransaccion"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:text="HACER TRANSACCION"
+                android:textAllCaps="false"
+                android:background="#3C3B3B"
+                android:src="@drawable/ic_baseline_speaker_phone_24"/>
+
+            <ImageButton
+                android:id="@+id/ibcuenta"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="HACER  CUENTA"
+                android:textAllCaps="false"
+                android:background="#3C3B3B"
+                android:src="@drawable/ic_baseline_monetization_on_24"/>
+
+            <ImageButton
+                android:id="@+id/iblimpiar"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="HACER  CUENTA"
+                android:textAllCaps="false"
+                android:background="#3C3B3B"
+                android:src="@drawable/ic_baseline_cleaning_services_24"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
